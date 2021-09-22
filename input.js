@@ -1,6 +1,5 @@
 let connection;
 
-// const { stdin } = require('process');
 const readline = require('readline');
 const rl = readline.createInterface({
   input: process.stdin,
@@ -37,7 +36,9 @@ const handleUserInput = function (key) {
   if (key === 'd') {
     connection.write('Move: right')
   }
-
+  if (key === 'z') {
+    connection.write('Say: Hey')
+  }
 }
 
 module.exports = setupInput;
