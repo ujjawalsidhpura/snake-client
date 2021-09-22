@@ -18,8 +18,6 @@ const connect = function () {
 
   })
 
-
-
   conn.on('data', (data) => {
     console.log('Incoming data -->', data)
   })
