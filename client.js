@@ -14,8 +14,11 @@ const connect = function () {
 
   //On make connection to the server
   conn.on('connect', () => {
-    console.log('Name:', name)
+    console.log('Name:', name);
+
   })
+
+
 
   conn.on('data', (data) => {
     console.log('Incoming data -->', data)
